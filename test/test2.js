@@ -1,12 +1,20 @@
-const should = require('should');
+const assert = require('assert');
 const operations = require('../operations');
 
-describe('Tests con should (test2.js)', function () {
-    it('suma(-2, -3) debería devolver -5', function () {
-        operations.suma(-2, -3).should.equal(-5);
+describe('Tests con assert (test1.js)', function () {
+    it('suma(2, 3) debería devolver 5', function () {
+        assert.strictEqual(operations.suma(2, 3), 5);
     });
 
-    it('resta(2, 5) debería devolver -3', function () {
-        operations.resta(2, 5).should.equal(-3);
+    it('resta(5, 2) debería devolver 3', function () {
+        assert.strictEqual(operations.resta(5, 2), 3);
+    });
+
+    it('multiplicar(3, 5) debería devolver 15', function () {
+    assert.strictEqual(operations.multiplicar(3, 5), 15);
+    });
+
+    it('dividir(21, 3) debería devolver 7', function () {
+    assert.strictEqual(operations.dividir(21, 3), 7);
     });
 });

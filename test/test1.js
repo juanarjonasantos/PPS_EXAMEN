@@ -9,4 +9,12 @@ describe('Tests con assert (test1.js)', function () {
     it('resta(5, 2) debería devolver 3', function () {
         assert.strictEqual(operations.resta(5, 2), 3);
     });
+
+    it('multiplicar(3, 5) debería devolver 15', function () {
+    assert.strictEqual(operations.multiplicar(3, 5), 15);
+    });
+
+    it('dividir(21, 3) debería devolver 7', function () {
+    assert.strictEqual(operations.dividir(21, 3), 7);
+    });
 });
